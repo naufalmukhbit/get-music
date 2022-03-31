@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Background from "./components/background";
+import Header from "./components/header";
+import TopArtists from "./components/topArtists";
+import TopSongs from "./components/topSongs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className="flex flex-col items-center justify-start min-h-screen">
+      <Header />
+      <div className="h-16" />
+      <div className="lg:max-w-4xl w-full z-10 px-8">
+        <TopArtists />
+        <TopSongs />
+      </div>
+      <footer className="z-10 mb-6 text-white/20">
+        Data provided by
+        {' '}
+        <a href="https://www.last.fm/api" className="underline">
+          Last.fm
         </a>
-      </header>
+      </footer>
+      <Background />
     </div>
   );
 }
