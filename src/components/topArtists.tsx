@@ -19,10 +19,10 @@ const TopArtists = () => {
 
   return (
     <div className="mb-32">
-      <h1 className="text-white font-extrabold text-6xl mb-8">
+      <h1 className="text-white font-extrabold text-6xl mb-8 px-20">
         Top Artists
       </h1>
-      <div className="flex flex-row gap-6 overflow-x-scroll overflow-y-hidden no-scrollbar">
+      <div className="flex flex-row gap-6 overflow-x-scroll overflow-y-hidden no-scrollbar px-20">
         {artistData.map((item) => {
           return (
             <div>
