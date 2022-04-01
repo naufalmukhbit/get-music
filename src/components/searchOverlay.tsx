@@ -71,8 +71,9 @@ const SearchOverlay = ({
         {searchQuery !== "" &&
           searchResults &&
           searchResults.length > 0 &&
-          searchResults.map((item) => (
+          searchResults.map((item, index) => (
             <a
+              key={item.name + index}
               href={item.url}
               target="_blank"
               rel="noreferrer"

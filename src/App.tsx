@@ -14,8 +14,8 @@ function App() {
       <Header setSearch={setSearchActive} />
       <div className="h-16" />
       <div className="w-full z-10">
-        <TopArtists />
         <TopSongs />
+        <TopArtists />
       </div>
       <footer className="z-10 mb-6 text-white/20">
         Data provided by{" "}
