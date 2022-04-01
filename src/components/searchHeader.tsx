@@ -53,7 +53,7 @@ const SearchHeader = ({
           <input
             value={query}
             className="w-full h-12 rounded-lg px-4 bg-slate-800/50 text-white focus:outline-none"
-            placeholder="Search..."
+            placeholder={`Search ${category}s...`}
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>

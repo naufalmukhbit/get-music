@@ -56,7 +56,7 @@ const SearchOverlay = ({
   }, [searchQuery, category]);
 
   return (
-    <div className="bg-black/70 backdrop-blur-xl h-screen w-screen inset-0 z-30 fixed flex flex-col">
+    <div className="bg-black/80 backdrop-blur-xl h-screen w-screen inset-0 z-30 fixed flex flex-col">
       <SearchHeader
         query={searchQuery}
         category={category}

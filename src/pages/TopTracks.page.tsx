@@ -23,16 +23,16 @@ const ListTopTracks = () => {
     count.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
   return (
-    <div className="w-full z-10 max-w-5xl mb-10 px-10">
-      <Link className="text-white/40 hover:text-white/80 transition" to="/">
+    <div className="w-full z-10 max-w-5xl mb-10">
+      <Link className="text-white/40 hover:text-white/80 transition px-4 md:px-10" to="/">
         &larr; Back
       </Link>
       <div className="h-4" />
-      <h1 className="text-white font-extrabold text-3xl lg:text-6xl">
+      <h1 className="text-white font-extrabold text-3xl px-4 md:px-10 lg:text-6xl">
         Top Songs
       </h1>
-      <div className="h-12" />
-      <table className="text-white w-full">
+      <div className="h-6 lg:h-12" />
+      <table className="text-white w-full md:px-10">
         <thead>
           <tr className="h-10 border-b border-white/30">
             <td className="text-center">#</td>

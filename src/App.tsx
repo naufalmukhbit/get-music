@@ -19,7 +19,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="w-full z-10 mt-8">
+            <div className="w-full z-10 mt-2 lg:mt-8">
               <TopSongs />
               <TopArtists />
             </div>

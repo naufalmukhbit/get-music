@@ -23,7 +23,7 @@ const TopSongs = () => {
 
   return (
     <div className="mb-16 lg:mb-32">
-      <div className="px-10 mb-4 flex flex-row justify-between items-center lg:px-20 lg:mb-8">
+      <div className="px-4 mb-4 flex flex-row justify-between items-center md:px-10 lg:px-20 lg:mb-8">
         <h1 className="text-white font-extrabold text-3xl lg:text-6xl">
           Top Songs
         </h1>
@@ -34,7 +34,7 @@ const TopSongs = () => {
           SEE MORE
         </Link>
       </div>
-      <div className="flex flex-row gap-3 lg:gap-6 overflow-x-scroll overflow-y-hidden no-scrollbar px-10 lg:px-20">
+      <div className="flex flex-row gap-3 lg:gap-6 overflow-x-scroll overflow-y-hidden no-scrollbar px-4 md:px-10 lg:px-20">
         {songsData.map((item, index) => (
           <Suspense fallback="Loading" key={item.name + index}>
             <TopListItem item={item} index={index} artist={item.artist} />
