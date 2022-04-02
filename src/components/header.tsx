@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import getMusic from "../assets/logo.png"
 
 const Header = ({setSearch}: {setSearch: (value: boolean) => void}) => {
   return (
     <header className="h-20 w-full z-20 sticky top-0 bg-black/50 backdrop-blur-xl">
       <div className="relative h-full flex flex-row justify-center items-center">
-        <img src={getMusic} alt="GetMusic Logo" width={150} height={38.57} />
+        <Link to="/">
+          <img src={getMusic} alt="GetMusic Logo" width={150} height={38.57} />
+        </Link>
         <button className="absolute right-8" onClick={() => setSearch(true)} aria-label="Search">
           <svg className="invert" width={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             {/* Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. */}
